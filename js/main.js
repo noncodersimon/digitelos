@@ -37,17 +37,17 @@
       scene.classList.add('settled');
     } else {
       // Hold the tangle for a beat so the "before" registers, then settle.
-      window.setTimeout(function () { scene.classList.add('settled'); }, 950);
+      window.setTimeout(function () { scene.classList.add('settled'); }, 1250);
       if (replay) {
         // Offer replay once the story has finished telling itself.
-        window.setTimeout(function () { replay.hidden = false; }, 6200);
+        window.setTimeout(function () { replay.hidden = false; }, 8600);
         replay.addEventListener('click', function () {
           // Snap back to the tangle with transitions off, hold a beat, then re-settle.
           scene.classList.add('no-anim');
           scene.classList.remove('settled');
           void scene.getBoundingClientRect(); // force style flush so the snap is instant
           scene.classList.remove('no-anim');
-          window.setTimeout(function () { scene.classList.add('settled'); }, 650);
+          window.setTimeout(function () { scene.classList.add('settled'); }, 800);
         });
       }
     }

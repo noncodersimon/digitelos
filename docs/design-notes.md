@@ -26,13 +26,17 @@ Working design brief. Update as decisions are made.
   + Fraunces italic ~430 as an accent face for single emphasised words and the "télos" motif.
 - **Structure**: single page — hero → services (6 cards) → approach (3 steps) → about → contact.
 - **Hero / signature element**: "chaos → calm" story. Line-art clutter of legacy tech (cables,
-  punch card, floppy, CRT, cassette, plug, cog, papers) auto-plays on load: holds ~1s, converges
-  into the golden-ratio scaffold + Fibonacci spiral (brand gradient stroke, drawn via
-  stroke-dashoffset), then sage-green sprigs bloom at the edges and sway gently. Replay button
-  appears after the sequence; `prefers-reduced-motion` gets the calm end-state instantly.
-- **Motion language**: transform/opacity only; settle 1.8s, draws ~2.3s, blooms with a slight
-  overshoot curve; scroll reveals 0.7s staggered 90ms (gated behind `.js` so content is never
-  hidden without JavaScript). Ambient glow drift behind the hero.
+  punch card, floppy, CRT, cassette, plug, cog, papers) auto-plays on load: holds ~1.25s,
+  converges into the golden-ratio scaffold + Fibonacci spiral (brand gradient stroke, drawn via
+  stroke-dashoffset), then a Devon spring hedgerow blooms around the edges — cow parsley,
+  primroses, red campion, bluebells, a foxglove spike, fern, grasses and blossom — and sways
+  gently. Replay button appears after the sequence (~8.5s total); `prefers-reduced-motion`
+  gets the calm end-state instantly.
+- **Motion language**: transform/opacity only; settle 2.4s, spiral draws 3.1s, hedgerow blooms
+  4.2s–6.3s with a slight overshoot curve; scroll reveals 0.7s staggered 90ms (gated behind
+  `.js` so content is never hidden without JavaScript). Ambient glow drift behind the hero.
+- **Hedgerow palette**: flower tokens (`--flower-primrose/campion/foxglove/bluebell/white`)
+  sit alongside the sage greens as naturalistic supporting hues, tuned per theme.
 - **Approach numerals** walk the spectrum: 01 cobalt (azure in dark), 02 vermilion, 03 amber.
 - **Supporting hue**: botanical sage greens (`--stem`, `--leaf-*` tokens) exist only for the
   organic-life motif; they are not part of the core brand spectrum.
