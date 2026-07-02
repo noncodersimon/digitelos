@@ -378,6 +378,8 @@ a { color: var(--accent); }
 .bell-bluebell   { fill: var(--flower-bluebell); }
 .flower-centre       { fill: var(--amber); }
 .flower-centre-light { fill: var(--bg); }
+.seed      { fill: var(--leaf-2); opacity: 0.8; }
+.seed-warm { fill: var(--amber); }
 .sprig {
   opacity: 0;
   transform-origin: bottom center;

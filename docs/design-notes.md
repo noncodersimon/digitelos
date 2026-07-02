@@ -29,7 +29,7 @@ Working design brief. Update as decisions are made.
   punch card, floppy, CRT, cassette, plug, cog, papers) auto-plays on load: holds ~1.25s,
   converges into the golden-ratio scaffold + Fibonacci spiral (brand gradient stroke, drawn via
   stroke-dashoffset), then a Devon spring hedgerow blooms around the edges — cow parsley,
-  primroses, red campion, bluebells, a foxglove spike, fern, grasses and blossom — and sways
+  primroses, red campion, bluebells, a foxglove spike, ferns, grasses, a dandelion seedhead, blossom and drifting seeds — and sways
   gently. Replay button appears after the sequence (~8.5s total); `prefers-reduced-motion`
   gets the calm end-state instantly.
 - **Motion language**: transform/opacity only; settle 2.4s, spiral draws 3.1s, hedgerow blooms
