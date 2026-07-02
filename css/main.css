@@ -396,11 +396,14 @@ a { color: var(--accent); }
   scale: 0.2;
 }
 .settled .leaf, .settled .berry, .settled .bloom { opacity: 1; scale: 1; }
-.settled .sprig { animation: sway 7.5s ease-in-out 7s infinite alternate; }
-.settled .flora > g:nth-child(even) .sprig { animation-duration: 9s; animation-direction: alternate-reverse; }
+/* Sway starts only after every bloom has finished (last bloom ends ~7.6s),
+   and always eases out from 0deg — a reversed animation-direction here
+   would make plants snap to full tilt on the first frame. */
+.settled .sprig { animation: sway 7.5s ease-in-out 8s infinite alternate; }
+.settled .flora > g:nth-child(even) .sprig { --sway-amp: -2deg; animation-duration: 9s; }
 @keyframes sway {
   from { rotate: 0deg; }
-  to   { rotate: 2.4deg; }
+  to   { rotate: var(--sway-amp, 2.4deg); }
 }
 
 .replay {
