@@ -15,3 +15,7 @@ dist/
 # Local scratch
 *.log
 tmp/
+
+# Python bytecode (skill scripts)
+__pycache__/
+*.pyc
