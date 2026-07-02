@@ -21,11 +21,22 @@ Working design brief. Update as decisions are made.
 - Devon charities and small organisations needing web presence
 - SMEs seeking fractional ITSM / AI adoption advisory
 
-## To decide in design pass
-- Body typeface to pair with Space Grotesk (currently system-ui)
-- Hero concept (previous single-page site used an animated RSVP bubble field - keep, evolve, or replace?)
-- Signature element for the new site
-- Page structure: single page vs multi-page
+## Design pass decisions (2026-07)
+- **Typography**: Space Grotesk 500/700 (display/headings, matches wordmark) + Inter 400/500/600 (body)
+  + Fraunces italic ~430 as an accent face for single emphasised words and the "télos" motif.
+- **Structure**: single page — hero → services (6 cards) → approach (3 steps) → about → contact.
+- **Hero / signature element**: "chaos → calm" story. Line-art clutter of legacy tech (cables,
+  punch card, floppy, CRT, cassette, plug, cog, papers) auto-plays on load: holds ~1s, converges
+  into the golden-ratio scaffold + Fibonacci spiral (brand gradient stroke, drawn via
+  stroke-dashoffset), then sage-green sprigs bloom at the edges and sway gently. Replay button
+  appears after the sequence; `prefers-reduced-motion` gets the calm end-state instantly.
+- **Motion language**: transform/opacity only; settle 1.8s, draws ~2.3s, blooms with a slight
+  overshoot curve; scroll reveals 0.7s staggered 90ms (gated behind `.js` so content is never
+  hidden without JavaScript). Ambient glow drift behind the hero.
+- **Approach numerals** walk the spectrum: 01 cobalt (azure in dark), 02 vermilion, 03 amber.
+- **Supporting hue**: botanical sage greens (`--stem`, `--leaf-*` tokens) exist only for the
+  organic-life motif; they are not part of the core brand spectrum.
+- **Contact**: mailto info@digitelos.co.uk only — no form for launch.
 
 ## Asset checklist
 - [x] Logo SVGs -> `assets/graphics/logo/` (icon, simple icon, mono variants, lockups, app icon)
