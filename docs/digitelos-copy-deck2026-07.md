@@ -49,7 +49,7 @@ Navigation: Work / Services & Prices / About / Contact. Logo links home.
 **Primary button:** See the work
 **Secondary button:** Get in touch
 
-### Section: What I do (three columns)
+### Section: What I do (four columns, that adjust to be mobile firendly)
 
 **Websites**
 A clean, fast website your organisation can be proud of - and update yourselves. In most cases built on WordPress, so you're never locked in to me or anyone else. From £950.
@@ -61,7 +61,7 @@ The things a normal web designer can't build: booking rotas, session schedulers,
 Updates, backups, security, and a real person to email when something breaks. Most sites fail through neglect, not bad design. Care plans from £40 a month.
 
 **Consulting**
-General consulting on how best small and medium businesses can optimise their processes and benefit from technology
+General consulting on how best small and medium businesses can optimise their processes and benefit from technology. £700/day.
 
 ### Section: Recent work (proof strip)
 
