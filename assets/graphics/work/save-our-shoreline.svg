@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" role="img">
+  <rect width="640" height="420" rx="14" fill="#FBFAF6"/>
+  <rect width="640" height="420" rx="14" fill="none" stroke="#E9E6DC" stroke-width="2"/>
+  <rect x="0" y="0" width="640" height="44" rx="14" fill="#E9E6DC"/>
+  <rect x="0" y="22" width="640" height="22" fill="#E9E6DC"/>
+  <circle cx="26" cy="22" r="6" fill="#EF3F18" opacity="0.75"/>
+  <circle cx="48" cy="22" r="6" fill="#F98E12" opacity="0.75"/>
+  <circle cx="70" cy="22" r="6" fill="#7C9070" opacity="0.85"/>
+  <rect x="96" y="12" width="120" height="20" rx="10" fill="#FBFAF6"/>
+  <rect x="36" y="72" width="110" height="14" rx="7" fill="#2B57DB"/>
+  <rect x="420" y="72" width="44" height="12" rx="6" fill="#E9E6DC"/>
+  <rect x="476" y="72" width="44" height="12" rx="6" fill="#E9E6DC"/>
+  <rect x="532" y="70" width="72" height="18" rx="9" fill="#2B57DB"/>
+  <rect x="36" y="112" width="568" height="150" rx="10" fill="#17A2E8" opacity="0.16"/>
+  <path d="M36 216 q 40 -26 80 0 t 80 0 t 80 0 t 80 0 t 80 0 t 80 0 t 88 0 v 46 h -568 z" fill="#17A2E8" opacity="0.65"/>
+  <path d="M36 230 q 40 -22 80 0 t 80 0 t 80 0 t 80 0 t 80 0 t 80 0 t 88 0 v 32 h -568 z" fill="#2B57DB" opacity="0.8"/>
+  <rect x="60" y="136" width="240" height="16" rx="8" fill="#0B0B10" opacity="0.8"/>
+  <rect x="60" y="162" width="180" height="10" rx="5" fill="#0B0B10" opacity="0.45"/>
+  <rect x="60" y="182" width="120" height="22" rx="11" fill="#EF3F18"/>
+  <rect x="36" y="292" width="270" height="9" rx="4.5" fill="#E9E6DC"/>
+  <rect x="36" y="310" width="270" height="9" rx="4.5" fill="#E9E6DC"/>
+  <rect x="36" y="328" width="162" height="9" rx="4.5" fill="#E9E6DC"/>
+  <rect x="330" y="292" width="274" height="9" rx="4.5" fill="#E9E6DC"/>
+  <rect x="330" y="310" width="274" height="9" rx="4.5" fill="#E9E6DC"/>
+  <rect x="330" y="328" width="164" height="9" rx="4.5" fill="#E9E6DC"/>
+  <rect x="36" y="360" width="130" height="26" rx="13" fill="#F98E12" opacity="0.85"/>
+</svg>

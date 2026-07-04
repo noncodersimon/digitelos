@@ -47,3 +47,27 @@ Working design brief. Update as decisions are made.
 - [x] Favicon PNGs + maskable + apple-touch -> `assets/graphics/favicon/`; `favicon.ico` + `site.webmanifest` at root
 - [x] Social/OG image -> `assets/graphics/og-image.png`
 - [ ] Any photography / illustration
+
+## Repositioning rework (July 2026)
+
+Implemented from `docs/copy-deck-2026-07.md`:
+
+- Five pages (Home, Work, Services & Prices, About, Contact) plus Privacy and 404,
+  as folder/index.html with root-absolute paths and per-page titles/descriptions,
+  canonicals and LocalBusiness JSON-LD (Slapton, Devon).
+- Buttons are now vermilion per the brief: light theme uses darkened `#C9300C`
+  (5.4:1 with white text), dark theme uses brand `#EF3F18` with near-ink text
+  (5.0:1). Cobalt/azure remain the dominant accents; amber stays decorative.
+- Copy rules enforced: short hyphens only (the FAQ marker uses a minus sign,
+  not an en dash), no AI language, no agency jargon, "you/I" voice.
+- Mobile nav: disclosure menu under 720px (this audience reads on phones).
+- Work previews are stylised SVG mockups in `assets/graphics/work/` - replace
+  with real screenshots when available (keep the filenames).
+- Contact form composes a mailto: in the visitor's own mail app - nothing is
+  stored server-side (reflected in the privacy note).
+- The chaos-to-calm hero animation is unchanged and now reads as
+  "paperwork and old tech resolving into calm order".
+
+Open items for Simon: real phone number (footer + contact page, marked TODO),
+real photo on About, client testimonials on Work, verify the Desktops for
+Peace copy.

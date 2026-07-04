@@ -14,10 +14,7 @@
   function applyTheme(theme) {
     root.dataset.theme = theme;
     if (themeMeta) themeMeta.setAttribute('content', META_COLOURS[theme]);
-    if (toggle) {
-      toggle.setAttribute('aria-pressed', String(theme === 'dark'));
-      toggle.setAttribute('aria-label', theme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme');
-    }
+    if (toggle) toggle.setAttribute('aria-pressed', String(theme === 'dark'));
     try { localStorage.setItem('digitelos-theme', theme); } catch (e) {}
   }
 
@@ -75,6 +72,45 @@
     var onScroll = function () { header.classList.toggle('scrolled', window.scrollY > 8); };
     window.addEventListener('scroll', onScroll, { passive: true });
     onScroll();
+  }
+
+  /* ---- Mobile navigation -------------------------------------------------- */
+  var navToggle = document.querySelector('.nav-toggle');
+  var navMenu = document.getElementById('nav-menu');
+  if (navToggle && navMenu) {
+    var closeNav = function () {
+      navMenu.classList.remove('open');
+      navToggle.setAttribute('aria-expanded', 'false');
+    };
+    navToggle.addEventListener('click', function () {
+      var open = navMenu.classList.toggle('open');
+      navToggle.setAttribute('aria-expanded', String(open));
+    });
+    navMenu.addEventListener('click', function (e) {
+      if (e.target.closest('a')) closeNav();
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && navMenu.classList.contains('open')) {
+        closeNav();
+        navToggle.focus();
+      }
+    });
+  }
+
+  /* ---- Contact form: compose the email in the visitor's own mail app ------ */
+  var form = document.querySelector('.contact-form');
+  if (form) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var val = function (n) { var el = form.elements[n]; return el ? el.value.trim() : ''; };
+      var subject = 'Website enquiry' + (val('name') ? ' from ' + val('name') : '');
+      var body = 'Name: ' + val('name') +
+                 '\nOrganisation: ' + val('organisation') +
+                 '\nRough budget: ' + val('budget') +
+                 '\n\n' + val('message');
+      window.location.href = 'mailto:info@digitelos.co.uk?subject=' +
+        encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+    });
   }
 
   /* ---- Footer year -------------------------------------------------------- */
