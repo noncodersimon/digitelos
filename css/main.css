@@ -638,7 +638,7 @@ a { color: var(--accent); }
   border-color: color-mix(in srgb, var(--accent) 45%, var(--border));
   box-shadow: 0 14px 34px -18px color-mix(in srgb, var(--accent) 35%, transparent);
 }
-.work-card img { border-radius: calc(var(--radius) - 2px); border: 1px solid var(--border); }
+.work-card img { border-radius: calc(var(--radius) - 2px); border: 1px solid var(--border); aspect-ratio: 3 / 2; object-fit: cover; object-position: top; }
 .work-card h3 { margin: 0.4rem 0 0.2rem; font-size: 1.05rem; }
 .work-card p { color: var(--text-muted); font-size: 0.92rem; margin: 0; }
 .work-more { margin-top: auto; padding-top: 0.6rem; color: var(--accent); font-weight: 600; font-size: 0.92rem; }
@@ -654,7 +654,8 @@ a { color: var(--accent); }
   scroll-margin-top: 6rem;
 }
 .project-flip .project-figure { order: 2; }
-.project-figure { margin: 0; }
+.project-figure { margin: 0; display: grid; gap: var(--space-2); }
+.shot-portrait { width: min(64%, 280px); margin: 0 auto; }
 .project-figure img { border: 1px solid var(--border); border-radius: var(--radius-lg); box-shadow: 0 20px 40px -30px rgba(11, 11, 16, 0.4); }
 .project h2 { margin-bottom: 0.2rem; }
 .project-meta {
