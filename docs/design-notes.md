@@ -68,6 +68,13 @@ Implemented from `docs/copy-deck-2026-07.md`:
 - The chaos-to-calm hero animation is unchanged and now reads as
   "paperwork and old tech resolving into calm order".
 
-Open items for Simon: real phone number (footer + contact page, marked TODO),
-real photo on About, client testimonials on Work, verify the Desktops for
-Peace copy.
+Update (July 2026, round 2): Carlane Court removed at Simon's request (not
+his build); Desktops for Peace promoted to the home proof strip with a link
+to desktopsforpeace.com; real phone number (+44 (0)7850 106 473) wired into
+footers, contact page and LocalBusiness schema with tel: links.
+
+Open items: portrait illustration on About and real screenshots for the
+work previews (files pending from Simon - drop in and reference as
+/assets/graphics/simon.png and /assets/graphics/work/<project>.png,
+CSS class .portrait is ready for the About image); client testimonials;
+possible rework of the Desktops for Peace site itself later.
