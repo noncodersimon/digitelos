@@ -79,6 +79,8 @@ phone-sized via .shot-portrait). Converted to WebP (~0.4MB total) via
 headless-Chromium canvas; source PNGs removed from assets/pictures/
 (recoverable from git history); SVG mockups deleted.
 
-Open items: portrait illustration for About (file still needed -
-reference as /assets/graphics/simon.png, .portrait CSS ready);
-client testimonials; possible rework of the Desktops for Peace site.
+Round 4: illustrated portrait live on About (/assets/graphics/simon.webp,
+circular crop via .portrait).
+
+Open items: client testimonials; possible rework of the Desktops for
+Peace site.
