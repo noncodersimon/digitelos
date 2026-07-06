@@ -41,17 +41,17 @@
     master.gain.exponentialRampToValueAtTime(0.0001, t0 + 7);   // fade as the hedgerow blooms
     var lp = ctx.createBiquadFilter();
     lp.type = 'lowpass';
-    lp.frequency.setValueAtTime(2200, t0);
-    lp.frequency.exponentialRampToValueAtTime(900, t0 + 6.5);
+    lp.frequency.setValueAtTime(2000, t0);
+    lp.frequency.exponentialRampToValueAtTime(800, t0 + 6.5);
     lp.connect(master);
     master.connect(ctx.destination);
-    // D across five octaves with A and F sharp for warmth
-    var chord = [73.42, 110, 146.83, 220, 293.66, 369.99, 440, 587.33, 880, 1174.66];
+    // B across five octaves with F sharp and D sharp for warmth
+    var chord = [61.74, 92.50, 123.47, 185.00, 246.94, 311.13, 369.99, 493.88, 739.99, 987.77];
     chord.forEach(function (f, i) {
       var o = ctx.createOscillator();
       var g = ctx.createGain();
       o.type = 'triangle';
-      var scattered = 120 + Math.random() * 240;
+      var scattered = 100 + Math.random() * 220;
       o.frequency.setValueAtTime(scattered, t0);
       o.frequency.setValueAtTime(scattered, t0 + 0.8);                    // hold through the tangle
       o.frequency.exponentialRampToValueAtTime(f, t0 + 3.2 + i * 0.05);   // converge with the spiral

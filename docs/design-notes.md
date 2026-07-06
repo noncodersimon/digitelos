@@ -97,7 +97,7 @@ step numerals lose the leading zero (1/2/3); Village Hall entry notes the
 client-set design brief (palette from a painting in the hall).
 
 Round 7: replay button now plays a subtle Deep Note homage via the Web
-Audio API - ten scattered triangle-wave voices converge into a D-major
+Audio API - ten scattered triangle-wave voices converge into a B-major
 spread in step with the chaos-to-calm choreography, low-passed and held
 around -18dB, fading out over ~7s. Synthesized live (no audio file).
 Gesture-gated by design: browsers block audio before user interaction,
