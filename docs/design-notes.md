@@ -89,5 +89,12 @@ cup-of-tea references replaced with "a friendly chat" / "Up for a chat?".
 The How-it-works step 1 "A phone call or a cup of tea" remains (deck copy,
 about the process rather than Simon).
 
+Round 6 (feedback tweaks): How-it-works steps broadened so tools and
+consulting read as first-class alongside websites; "committee" retained
+only in the concrete project examples ("organisation"/"you" elsewhere -
+hero subhead, recent-work heading, step 1, services FAQ heading and CTA);
+step numerals lose the leading zero (1/2/3); Village Hall entry notes the
+client-set design brief (palette from a painting in the hall).
+
 Open items: client testimonials; possible rework of the Desktops for
 Peace site.
