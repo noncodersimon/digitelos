@@ -25,6 +25,46 @@
     });
   }
 
+  /* ---- A quiet nod to the Deep Note: scattered voices converging into a
+     warm chord, timed to the replay's chaos-to-calm choreography. Browsers
+     only allow audio after a user gesture, so this runs on replay clicks. */
+  function playDeepNote() {
+    var AC = window.AudioContext || window.webkitAudioContext;
+    if (!AC) return;
+    var ctx = new AC();
+    if (ctx.state === 'suspended') ctx.resume();
+    var t0 = ctx.currentTime;
+    var master = ctx.createGain();
+    master.gain.setValueAtTime(0.0001, t0);
+    master.gain.exponentialRampToValueAtTime(0.13, t0 + 1.4);   // gentle swell in
+    master.gain.setValueAtTime(0.13, t0 + 3.6);                 // hold while the spiral draws
+    master.gain.exponentialRampToValueAtTime(0.0001, t0 + 7);   // fade as the hedgerow blooms
+    var lp = ctx.createBiquadFilter();
+    lp.type = 'lowpass';
+    lp.frequency.setValueAtTime(2200, t0);
+    lp.frequency.exponentialRampToValueAtTime(900, t0 + 6.5);
+    lp.connect(master);
+    master.connect(ctx.destination);
+    // D across five octaves with A and F sharp for warmth
+    var chord = [73.42, 110, 146.83, 220, 293.66, 369.99, 440, 587.33, 880, 1174.66];
+    chord.forEach(function (f, i) {
+      var o = ctx.createOscillator();
+      var g = ctx.createGain();
+      o.type = 'triangle';
+      var scattered = 120 + Math.random() * 240;
+      o.frequency.setValueAtTime(scattered, t0);
+      o.frequency.setValueAtTime(scattered, t0 + 0.8);                    // hold through the tangle
+      o.frequency.exponentialRampToValueAtTime(f, t0 + 3.2 + i * 0.05);   // converge with the spiral
+      o.detune.value = (Math.random() - 0.5) * 10;
+      g.gain.value = 0.8 / chord.length;
+      o.connect(g);
+      g.connect(lp);
+      o.start(t0);
+      o.stop(t0 + 7.2);
+    });
+    window.setTimeout(function () { ctx.close(); }, 7600);
+  }
+
   /* ---- Hero: settle the tangle into the spiral -------------------------- */
   var scene = document.querySelector('.hero-scene');
   var replay = document.querySelector('.replay');
@@ -45,6 +85,7 @@
           void scene.getBoundingClientRect(); // force style flush so the snap is instant
           scene.classList.remove('no-anim');
           window.setTimeout(function () { scene.classList.add('settled'); }, 800);
+          playDeepNote();
         });
       }
     }
