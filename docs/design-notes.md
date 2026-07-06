@@ -82,5 +82,12 @@ headless-Chromium canvas; source PNGs removed from assets/pictures/
 Round 4: illustrated portrait live on About (/assets/graphics/simon.webp,
 circular crop via .portrait).
 
+Round 5: About and Why-Digitelos copy genericised at Simon's request -
+"broad experience across organisations large and small" instead of naming
+NHS/councils/schools (departs deliberately from the copy deck), and the
+cup-of-tea references replaced with "a friendly chat" / "Up for a chat?".
+The How-it-works step 1 "A phone call or a cup of tea" remains (deck copy,
+about the process rather than Simon).
+
 Open items: client testimonials; possible rework of the Desktops for
 Peace site.
