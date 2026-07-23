@@ -104,5 +104,15 @@ Gesture-gated by design: browsers block audio before user interaction,
 so the automatic first play stays silent and the sound is effectively
 opt-in via replay.
 
+Round 8 (Simon's direct GitHub edits - AUTHORITATIVE, do not revert):
+consulting promoted to a first-class offer across titles, hero, metas and
+schema descriptions; hero heading and lede trimmed; Slapton removed as the
+business's public location (now Devon / South Devon / near Start Bay,
+schema locality Kingsbridge - see the Location privacy section in
+CLAUDE.md); About leads with IT strategy guidance, covers small and
+medium organisations, and drops the sole-practitioner bullet and the
+"can't afford an agency" framing. The live HTML is canonical over the
+copy deck and over any earlier wording in these notes.
+
 Open items: client testimonials; possible rework of the Desktops for
 Peace site.
