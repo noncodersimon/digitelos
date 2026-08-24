@@ -131,6 +131,12 @@ market data web app) FIRST on the page, and Spirit
 entry. Both previews are placeholder SVG mockups pending real
 screenshots; both descriptions are marked for Simon's sanity check.
 
-Open items: real screenshots + description check for Market-flows and
-Spirit; client testimonials; possible rework of the Desktops for Peace
-site.
+Round 11: real screenshots wired in for Market Flows (front + picker)
+and Spirit (front + study note); descriptions verified against the
+apps and enriched; placeholder SVGs removed; Market Flows leads the
+home proof strip in place of the Village Hall card (Village Hall stays
+on the Work page). App names as rendered in their UIs: "Market Flows",
+"SpiritBible" (site heading uses "Spirit").
+
+Open items: client testimonials; possible rework of the Desktops for
+Peace site.
