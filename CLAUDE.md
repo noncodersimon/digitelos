@@ -14,6 +14,10 @@ the live copy directly on GitHub, and **the HTML is canonical**. Never
 - Lead with: consulting alongside custom interactive tools (rotas, schedulers,
   booking widgets), ongoing care, and Simon's 20+ years in professional IT
   service management. Consulting is a first-class offer, not an afterthought.
+- Do not let the site read as "just a website creator" - Simon also uses it
+  professionally and is tuning the balance. Custom applications (Market-flows,
+  Spirit) and IT advice are part of the story; follow his copy edits, never
+  swing the framing back towards website-building without being asked.
 
 ## Tone & copy rules
 

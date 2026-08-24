@@ -114,5 +114,23 @@ medium organisations, and drops the sole-practitioner bullet and the
 "can't afford an agency" framing. The live HTML is canonical over the
 copy deck and over any earlier wording in these notes.
 
-Open items: client testimonials; possible rework of the Desktops for
-Peace site.
+Round 9 (Simon's direct edits, Aug 2026 - AUTHORITATIVE, do not revert):
+copy softened with senior job-search optics in mind - Simon does not want
+the site to read as "just a website creator". About trimmed (ITIL line
+removed); "Digitelos exists to help small and medium organisations with
+their IT"; services/FAQ headings reframed ("Guideline numbers", website
+questions); final CTA leads with IT advice; some elements commented out
+rather than deleted (the "Four things" heading, the SOS outcome line) -
+LEAVE those comments in place, they are Simon's to restore. Positioning
+may shift further; the live HTML remains canonical.
+
+Round 10: two non-WordPress projects added to Work to counter the
+"WordPress man" impression - Market-flows (flows.digitelos.co.uk, live
+market data web app) FIRST on the page, and Spirit
+(spirit.digitelos.co.uk, Simon's Next.js Bible site) after the parish
+entry. Both previews are placeholder SVG mockups pending real
+screenshots; both descriptions are marked for Simon's sanity check.
+
+Open items: real screenshots + description check for Market-flows and
+Spirit; client testimonials; possible rework of the Desktops for Peace
+site.
