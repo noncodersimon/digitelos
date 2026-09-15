@@ -656,7 +656,6 @@ a { color: var(--accent); }
 .project-flip .project-figure { order: 2; }
 .project-figure { margin: 0; display: grid; gap: var(--space-2); }
 .shot-portrait { width: min(64%, 280px); margin: 0 auto; }
-.figure-phones { grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; } /* two phone shots side by side */
 .project-figure img { border: 1px solid var(--border); border-radius: var(--radius-lg); box-shadow: 0 20px 40px -30px rgba(11, 11, 16, 0.4); }
 .project h2 { margin-bottom: 0.2rem; }
 .project-meta {
@@ -872,11 +871,6 @@ a.external { color: var(--accent); font-weight: 500; }
   .about-layout { grid-template-columns: 1fr; }
   .why-grid { grid-template-columns: 1fr; }
   .project, .project-flip { grid-template-columns: 1fr; }
-}
-@media (max-width: 560px) {
-  /* Phone-shot pairs stack once side by side would make them too small to read */
-  .figure-phones { grid-template-columns: 1fr; }
-  .figure-phones img { width: min(72%, 300px); margin: 0 auto; }
 }
 .site-header { position: sticky; }
 .header-inner { position: relative; }
