@@ -138,5 +138,13 @@ home proof strip in place of the Village Hall card (Village Hall stays
 on the Work page). App names as rendered in their UIs: "Market Flows",
 "SpiritBible" (site heading uses "Spirit").
 
+Round 12: Pickle Rota (pickle-rota.digitelos.co.uk, the multi-group
+version of the village hall scheduler) added as the final Work entry at
+Simon's request that it sit lower down the page. Two phone screenshots
+side by side via .figure-phones (stacked below 560px), captured from the
+app running locally with a demo "Wimbledon Wombles" group; the copy
+echoes the app's own landing-page pitch. Footer and home proof strip
+unchanged.
+
 Open items: client testimonials; possible rework of the Desktops for
 Peace site.
