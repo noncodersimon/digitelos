@@ -71,6 +71,25 @@
   var replay = document.querySelector('.replay');
   var sceneControls = document.querySelector('.scene-controls');
   var animationSound = document.getElementById('animation-sound');
+  var mobileSound = window.matchMedia('(max-width: 720px), (hover: none) and (pointer: coarse)');
+  var soundSupported = Boolean(window.AudioContext || window.webkitAudioContext);
+
+  // Mobile replay stays silent: audio can be suppressed by browser/device
+  // settings. Never retain an enabled choice when its control is hidden.
+  if (animationSound) {
+    var updateSoundOption = function () {
+      var available = soundSupported && !mobileSound.matches;
+      animationSound.closest('.sound-option').hidden = !available;
+      animationSound.disabled = !available;
+      if (!available) animationSound.checked = false;
+    };
+    updateSoundOption();
+    if (mobileSound.addEventListener) {
+      mobileSound.addEventListener('change', updateSoundOption);
+    } else {
+      mobileSound.addListener(updateSoundOption);
+    }
+  }
 
   if (scene) {
     if (reducedMotion) {
@@ -89,7 +108,7 @@
           void scene.getBoundingClientRect(); // force style flush so the snap is instant
           scene.classList.remove('no-anim');
           window.setTimeout(function () { scene.classList.add('settled'); }, 800);
-          if (animationSound && animationSound.checked) playDeepNote();
+          if (animationSound && animationSound.checked && !mobileSound.matches && soundSupported) playDeepNote();
           window.setTimeout(function () { replay.disabled = false; }, 8600);
         });
       }

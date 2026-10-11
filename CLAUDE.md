@@ -10,8 +10,9 @@ historical context; do not restore their older positioning or wording.
   individuals as well as organisations; do not restrict the company proposition
   to local charities, clubs or website customers.
 - Working headline: "Thoughtful software. Practical IT expertise."
-- Consulting covers technology reviews, service improvement and software
-  planning. Describe concrete outcomes; agree scope, deliverables and fees.
+- Consulting reviews focus on organisational priorities, processes and
+  opportunities, alongside service improvement and software planning. Optional
+  implementation support has separately agreed scope and fees.
 - Do not reintroduce website packages, low-cost widgets or care-plan pricing.
 - Products have their own identities. Do not publish an unannounced product's
   name, details or availability without Simon's instruction.
@@ -36,6 +37,8 @@ historical context; do not restore their older positioning or wording.
   small highlights. Maintain accessible contrast in both themes.
 - Mobile-first, lightweight static HTML/CSS/JavaScript. No build is required.
 - Animation replay is silent by default; sound requires explicit opt-in.
+  Hide and disable sound on mobile layouts and primary touch devices, including
+  landscape phones; retain silent replay and the desktop sound option.
   Respect reduced motion. Content and navigation must work without JavaScript.
 - Use semantic headings, descriptive links, image alt text and visible focus.
 - Contact composes an email locally; it does not submit to a backend. Do not

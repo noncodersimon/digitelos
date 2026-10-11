@@ -510,7 +510,7 @@ a { color: var(--accent); }
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: var(--space-3);
   counter-reset: step;
 }
@@ -524,12 +524,14 @@ a { color: var(--accent); }
   margin-bottom: var(--space-2);
   color: var(--step-c, var(--accent));
 }
-/* Steps walk the brand spectrum: cobalt -> vermilion -> amber */
+/* Steps use the brand spectrum, with darker shades for readable numbers. */
 .step:nth-child(1) { --step-c: var(--cobalt); }
 .step:nth-child(2) { --step-c: var(--vermilion); }
 .step:nth-child(3) { --step-c: #B36300; }   /* amber reads 2.3:1 on paper - darkened for light theme */
+.step:nth-child(4) { --step-c: #0877B0; }
 [data-theme="dark"] .step:nth-child(1) { --step-c: var(--azure); }
 [data-theme="dark"] .step:nth-child(3) { --step-c: var(--amber); }
+[data-theme="dark"] .step:nth-child(4) { --step-c: var(--azure); }
 .step p { color: var(--text-muted); font-size: 0.98rem; margin-bottom: 0; }
 
 /* Fact lists */
@@ -839,7 +841,7 @@ a.external { color: var(--accent); font-weight: 500; }
   .hero-inner { grid-template-columns: 1fr; padding-top: var(--space-3); min-height: 0; }
   .hero-scene { max-width: 34rem; margin: 0 auto; }
   .card-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .steps { grid-template-columns: 1fr; gap: var(--space-3); }
+  .steps { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-3); }
 }
 @media (max-width: 720px) {
   .header-inner { padding: 0.7rem var(--space-2); }
@@ -866,6 +868,7 @@ a.external { color: var(--accent); font-weight: 500; }
   .section { padding: var(--space-4) var(--space-2); }
   .hero-inner { padding-left: var(--space-2); padding-right: var(--space-2); }
   .card-grid { grid-template-columns: 1fr; }
+  .steps { grid-template-columns: 1fr; }
   .btn-lg { width: 100%; }
   .contact-layout { grid-template-columns: 1fr; }
   .about-layout { grid-template-columns: 1fr; }
@@ -934,6 +937,11 @@ a.external { color: var(--accent); font-weight: 500; }
 .scene-controls .replay { position: static; flex-shrink: 0; }
 .sound-option { display: inline-flex; align-items: center; gap: 0.5rem; color: var(--text-muted); font-size: 0.85rem; cursor: pointer; }
 .sound-option input { accent-color: var(--accent); width: 1rem; height: 1rem; }
+.sound-option[hidden] { display: none; }
+/* Match the audio eligibility check in main.js, including landscape phones. */
+@media (max-width: 720px), (hover: none) and (pointer: coarse) {
+  .sound-option { display: none; }
+}
 button.btn { border: 1px solid transparent; }
 button:disabled { cursor: default; opacity: 0.55; }
 html { scroll-padding-top: 6rem; }
