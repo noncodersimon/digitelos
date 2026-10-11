@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact - Digitelos, Devon</title>
-  <meta name="description" content="Get in touch with Digitelos in Devon: IT consulting, websites, custom tools and care plans for charities, clubs and small organisations. First conversations are free.">
+  <title>Contact Digitelos - Consulting &amp; Product Enquiries</title>
+  <meta name="description" content="Contact Digitelos about IT consulting, software products or support. Start a conversation by email or phone.">
   <link rel="canonical" href="https://digitelos.co.uk/contact/">
 
   <link rel="icon" href="/favicon.ico" sizes="48x48">
@@ -13,9 +13,12 @@
   <link rel="manifest" href="/site.webmanifest">
   <meta name="theme-color" content="#FBFAF6">
 
-  <meta property="og:title" content="Contact - Digitelos, Devon">
-  <meta property="og:description" content="Get in touch with Digitelos in Devon: IT consulting, websites, custom tools and care plans for charities, clubs and small organisations. First conversations are free.">
-  <meta property="og:image" content="https://digitelos.co.uk/assets/graphics/og-image.png">
+  <meta property="og:title" content="Contact Digitelos - Consulting &amp; Product Enquiries">
+  <meta property="og:description" content="Contact Digitelos about IT consulting, software products or support. Start a conversation by email or phone.">
+  <meta property="og:image" content="https://digitelos.co.uk/assets/graphics/og-company.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Digitelos - Thoughtful software. Practical IT expertise.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://digitelos.co.uk/contact/">
 
@@ -35,22 +38,33 @@
   </script>
 
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Digitelos",
-    "description": "Consulting, websites and digital tools for charities, clubs and small organisations in Devon and the South West.",
-    "url": "https://digitelos.co.uk/",
-    "email": "info@digitelos.co.uk",
-    "telephone": "+44 7850 106473",
-    "image": "https://digitelos.co.uk/assets/graphics/og-image.png",
-    "logo": "https://digitelos.co.uk/assets/graphics/logo/Digitelos-B-icon.svg",
-    "address": { "@type": "PostalAddress", "addressLocality": "Kingsbridge", "addressRegion": "Devon", "addressCountry": "GB" },
-    "areaServed": ["Devon", "South West England"],
-    "founder": { "@type": "Person", "name": "Simon" },
-    "priceRange": "££"
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Digitelos",
+  "description": "Software products for everyday life and practical IT consulting, based in Devon.",
+  "url": "https://digitelos.co.uk/",
+  "email": "info@digitelos.co.uk",
+  "telephone": "+44 7850 106473",
+  "image": "https://digitelos.co.uk/assets/graphics/og-company.png",
+  "logo": "https://digitelos.co.uk/assets/graphics/logo/Digitelos-B-icon.svg",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Kingsbridge",
+    "addressRegion": "Devon",
+    "addressCountry": "GB"
+  },
+  "areaServed": [
+    "Devon",
+    "South West England"
+  ],
+  "founder": {
+    "@type": "Person",
+    "name": "Simon"
   }
+}
   </script>
+
 </head>
 <body>
 
@@ -67,8 +81,8 @@
           <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
         </button>
         <div class="nav-menu" id="nav-menu">
-          <a href="/work/">Work</a>
-          <a href="/services/">Services &amp; Prices</a>
+          <a href="/products/">Products</a>
+          <a href="/consulting/">Consulting</a>
           <a href="/about/">About</a>
           <a href="/contact/" class="nav-cta" aria-current="page">Contact</a>
         </div>
@@ -88,44 +102,20 @@
   <main id="main">
     <section class="page-hero">
       <p class="eyebrow">Contact</p>
-      <h1>Tell me what's going <em class="accent-serif">on</em></h1>
-      <p class="lede">First conversations are free, and honest. A few lines about your organisation and what you need is plenty.</p>
+      <h1>Let’s talk about what comes <em class="accent-serif">next.</em></h1>
+      <p class="lede">An IT decision, a question about our software, or something you would like to explore. Tell us a little about it.</p>
     </section>
-
     <section class="section contact-layout">
-      <form class="contact-form reveal" novalidate>
-        <div class="form-field">
-          <label for="cf-name">Your name</label>
-          <input id="cf-name" name="name" type="text" autocomplete="name" required>
-        </div>
-        <div class="form-field">
-          <label for="cf-org">Organisation <span class="label-hint">(if there is one)</span></label>
-          <input id="cf-org" name="organisation" type="text" autocomplete="organization">
-        </div>
-        <div class="form-field">
-          <label for="cf-message">What do you need?</label>
-          <textarea id="cf-message" name="message" rows="6" required placeholder="A new website? A rota that needs taming? Tell me in your own words."></textarea>
-        </div>
-        <div class="form-field">
-          <label for="cf-budget">Rough budget</label>
-          <select id="cf-budget" name="budget">
-            <option>Not sure yet</option>
-            <option>Under &pound;500</option>
-            <option>&pound;500 - &pound;1,000</option>
-            <option>&pound;1,000 - &pound;2,500</option>
-            <option>&pound;2,500 or more</option>
-          </select>
-        </div>
-        <button class="btn btn-primary" type="submit">Send</button>
-        <p class="form-note">The form opens your own email app with everything filled in - nothing is stored on this site.</p>
+      <form class="contact-form reveal">
+        <div class="form-field"><label for="cf-name">Your name</label><input id="cf-name" name="name" type="text" autocomplete="name" required maxlength="150"></div>
+        <div class="form-field"><label for="cf-org">Organisation <span class="label-hint">(optional)</span></label><input id="cf-org" name="organisation" type="text" autocomplete="organization" maxlength="200"></div>
+        <div class="form-field"><label for="cf-enquiry">Enquiry type <span class="label-hint">(optional)</span></label><select id="cf-enquiry" name="enquiry"><option value="">Please select</option><option>IT consulting</option><option>Product question or support</option><option>General enquiry</option></select></div>
+        <div class="form-field"><label for="cf-message">How can we help?</label><textarea id="cf-message" name="message" rows="6" required maxlength="4000" placeholder="Describe what you have in mind. For product questions, please include the product name."></textarea></div>
+        <button class="btn btn-primary" type="submit" disabled>Compose email</button>
+        <p class="form-note">This opens a draft in your email app for you to review and send. These details are not submitted to this website. You can also email us directly.</p>
+        <noscript><p>Please use the email link below to send your enquiry. The compose button needs JavaScript.</p></noscript>
       </form>
-
-      <aside class="contact-aside reveal" style="--i:1">
-        <h2>Or just get in touch directly</h2>
-        <p><a class="contact-big" href="mailto:info@digitelos.co.uk">info@digitelos.co.uk</a></p>
-        <p class="contact-phone"><a href="tel:+447850106473">+44 (0)7850 106 473</a></p>
-        <p>Prefer to talk? Call me, or if you're local we can meet - I'm near Start Bay.</p>
-      </aside>
+      <aside class="contact-aside reveal" style="--i:1"><h2>Contact Digitelos</h2><p><a class="contact-big" href="mailto:info@digitelos.co.uk">info@digitelos.co.uk</a></p><p class="contact-phone"><a href="tel:+447850106473">+44 (0)7850 106 473</a></p><p>Based in Devon. We can start by email or phone, and arrange a meeting where useful.</p><p>For product support, please describe the issue without including passwords, payment details or other sensitive information.</p><a href="/privacy/">How this site handles information</a></aside>
     </section>
   </main>
 
@@ -136,8 +126,8 @@
         <span class="brand-name">Digitelos</span>
       </a>
       <div class="footer-meta">
-        <p>Digitelos · Devon</p>
-        <p><a href="https://flows.digitelos.co.uk">Market Flows</a> · <a href="https://spirit.digitelos.co.uk">SpiritBible</a></p>
+        <p>Software &amp; IT consulting · Devon</p>
+        <p><a href="/products/">Products</a> · <a href="/consulting/">Consulting</a> · <a href="/work/">Selected work</a></p>
         <p><a href="mailto:info@digitelos.co.uk">info@digitelos.co.uk</a> · <a class="footer-phone" href="tel:+447850106473">+44 (0)7850 106 473</a> · <a href="/privacy/">Privacy</a></p>
         <p>&copy; <span data-year>2026</span> Digitelos</p>
       </div>

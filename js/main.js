@@ -27,7 +27,8 @@
 
   /* ---- A quiet nod to the Deep Note: scattered voices converging into a
      warm chord, timed to the replay's chaos-to-calm choreography. Browsers
-     only allow audio after a user gesture, so this runs on replay clicks. */
+     only allow audio after a user gesture. Replay is silent unless the
+     visitor explicitly selects sound. */
   function playDeepNote() {
     var AC = window.AudioContext || window.webkitAudioContext;
     if (!AC) return;
@@ -68,6 +69,8 @@
   /* ---- Hero: settle the tangle into the spiral -------------------------- */
   var scene = document.querySelector('.hero-scene');
   var replay = document.querySelector('.replay');
+  var sceneControls = document.querySelector('.scene-controls');
+  var animationSound = document.getElementById('animation-sound');
 
   if (scene) {
     if (reducedMotion) {
@@ -77,15 +80,17 @@
       window.setTimeout(function () { scene.classList.add('settled'); }, 1250);
       if (replay) {
         // Offer replay once the story has finished telling itself.
-        window.setTimeout(function () { replay.hidden = false; }, 8600);
+        window.setTimeout(function () { sceneControls.hidden = false; }, 8600);
         replay.addEventListener('click', function () {
+          replay.disabled = true;
           // Snap back to the tangle with transitions off, hold a beat, then re-settle.
           scene.classList.add('no-anim');
           scene.classList.remove('settled');
           void scene.getBoundingClientRect(); // force style flush so the snap is instant
           scene.classList.remove('no-anim');
           window.setTimeout(function () { scene.classList.add('settled'); }, 800);
-          playDeepNote();
+          if (animationSound && animationSound.checked) playDeepNote();
+          window.setTimeout(function () { replay.disabled = false; }, 8600);
         });
       }
     }
@@ -141,13 +146,16 @@
   /* ---- Contact form: compose the email in the visitor's own mail app ------ */
   var form = document.querySelector('.contact-form');
   if (form) {
+    form.querySelector('[type="submit"]').disabled = false;
     form.addEventListener('submit', function (e) {
       e.preventDefault();
+      if (!form.reportValidity()) return;
       var val = function (n) { var el = form.elements[n]; return el ? el.value.trim() : ''; };
-      var subject = 'Website enquiry' + (val('name') ? ' from ' + val('name') : '');
+      var subject = 'Digitelos - ' + (val('enquiry') || 'General enquiry') +
+                    (val('name') ? ' from ' + val('name') : '');
       var body = 'Name: ' + val('name') +
                  '\nOrganisation: ' + val('organisation') +
-                 '\nRough budget: ' + val('budget') +
+                 '\nEnquiry: ' + (val('enquiry') || 'General enquiry') +
                  '\n\n' + val('message');
       window.location.href = 'mailto:info@digitelos.co.uk?subject=' +
         encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);

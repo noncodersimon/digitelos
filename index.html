@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Digitelos - Consulting, Websites &amp; Digital Tools for Small Organisations in Devon</title>
-  <meta name="description" content="IT Consulting, Websites and digital tools for charities, clubs and small organisations">
+  <title>Digitelos - Software &amp; IT Consulting</title>
+  <meta name="description" content="Thoughtful software for everyday life and practical IT consulting. Digitelos brings over twenty years of IT service management experience to technology and software.">
   <link rel="canonical" href="https://digitelos.co.uk/">
 
   <link rel="icon" href="/favicon.ico" sizes="48x48">
@@ -13,9 +13,12 @@
   <link rel="manifest" href="/site.webmanifest">
   <meta name="theme-color" content="#FBFAF6">
 
-  <meta property="og:title" content="Digitelos - Consulting &amp; Websites &amp; Digital Tools for Charities, Clubs and Small Businesses in Devon">
-  <meta property="og:description" content="Consulting, Websites and digital tools for charities, clubs and small organisations">
-  <meta property="og:image" content="https://digitelos.co.uk/assets/graphics/og-image.png">
+  <meta property="og:title" content="Digitelos - Software &amp; IT Consulting">
+  <meta property="og:description" content="Thoughtful software for everyday life and practical IT consulting. Digitelos brings over twenty years of IT service management experience to technology and software.">
+  <meta property="og:image" content="https://digitelos.co.uk/assets/graphics/og-company.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Digitelos - Thoughtful software. Practical IT expertise.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://digitelos.co.uk/">
 
@@ -35,22 +38,33 @@
   </script>
 
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Digitelos",
-    "description": "Consulting, Websites and digital tools for charities, clubs and small organisations in Devon and the South West.",
-    "url": "https://digitelos.co.uk/",
-    "email": "info@digitelos.co.uk",
-    "telephone": "+44 7850 106473",
-    "image": "https://digitelos.co.uk/assets/graphics/og-image.png",
-    "logo": "https://digitelos.co.uk/assets/graphics/logo/Digitelos-B-icon.svg",
-    "address": { "@type": "PostalAddress", "addressLocality": "Kingsbridge", "addressRegion": "Devon", "addressCountry": "GB" },
-    "areaServed": ["Devon", "South West England"],
-    "founder": { "@type": "Person", "name": "Simon" },
-    "priceRange": "££"
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Digitelos",
+  "description": "Software products for everyday life and practical IT consulting, based in Devon.",
+  "url": "https://digitelos.co.uk/",
+  "email": "info@digitelos.co.uk",
+  "telephone": "+44 7850 106473",
+  "image": "https://digitelos.co.uk/assets/graphics/og-company.png",
+  "logo": "https://digitelos.co.uk/assets/graphics/logo/Digitelos-B-icon.svg",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Kingsbridge",
+    "addressRegion": "Devon",
+    "addressCountry": "GB"
+  },
+  "areaServed": [
+    "Devon",
+    "South West England"
+  ],
+  "founder": {
+    "@type": "Person",
+    "name": "Simon"
   }
+}
   </script>
+
 </head>
 <body>
 
@@ -67,8 +81,8 @@
           <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
         </button>
         <div class="nav-menu" id="nav-menu">
-          <a href="/work/">Work</a>
-          <a href="/services/">Services &amp; Prices</a>
+          <a href="/products/">Products</a>
+          <a href="/consulting/">Consulting</a>
           <a href="/about/">About</a>
           <a href="/contact/" class="nav-cta">Contact</a>
         </div>
@@ -86,26 +100,20 @@
   </header>
 
   <main id="main">
-
-    <!-- ================= HERO ================= -->
     <section class="hero" id="top">
       <div class="hero-glow hero-glow-a" aria-hidden="true"></div>
       <div class="hero-glow hero-glow-b" aria-hidden="true"></div>
 
       <div class="hero-inner">
         <div class="hero-copy">
-          <p class="eyebrow">Consulting &amp; Websites &amp; digital tools · Devon</p>
-          <h1>Consulting, Websites and digital <em class="accent-serif">tools</em> for small organisations.</h1>
-          <p class="lede">
-            Looked after by someone local.
-          </p>
+          <p class="eyebrow">Software &amp; IT consulting</p>
+          <h1>Thoughtful software.<br>Practical IT <em class="accent-serif">expertise.</em></h1>
+          <p class="lede">Software for everyday life. Clear advice for the technology decisions that matter to your organisation.</p>
           <div class="hero-ctas">
-            <a class="btn btn-primary" href="/work/">See the work</a>
-            <a class="btn btn-ghost" href="/contact/">Get in touch</a>
+            <a class="btn btn-primary" href="/products/">Explore our products</a>
+            <a class="btn btn-ghost" href="/consulting/">IT consulting</a>
           </div>
-          <p class="capability-strip">
-            <span>Websites</span><span>Rotas&nbsp;&amp;&nbsp;schedulers</span><span>Care&nbsp;plans</span><span>Devon</span>
-          </p>
+          <p class="hero-note">Built on over twenty years of IT service management experience.</p>
         </div>
 
         <div class="hero-scene">
@@ -405,141 +413,62 @@
             </g>
           </svg>
 
-          <button class="replay" type="button" aria-label="Replay the intro animation, with a little sound" hidden>
+          <div class="scene-controls" hidden>
+          <label class="sound-option"><input type="checkbox" id="animation-sound"> Sound on replay</label>
+          <button class="replay" type="button" aria-label="Replay the intro animation">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/>
             </svg>
           </button>
+          </div>
         </div>
       </div>
     </section>
-
-    <!-- ================= WHAT I DO ================= -->
-    <section id="what-i-do" class="section">
+    <section class="section" id="what-we-do">
       <div class="section-head reveal">
-        <p class="eyebrow">What I do</p>
-   <!--     <h2>Four things, priced <em class="accent-serif">plainly</em></h2>     -->
-        <p class="section-lede">Full details and packages are on the <a href="/services/">Services &amp; Prices</a> page.</p>
+        <p class="eyebrow">What we do</p>
+        <h2>Good technology starts with <em class="accent-serif">understanding.</em></h2>
+        <p class="section-lede">What needs to work better? That question guides both the software we develop and the advice we give.</p>
       </div>
-      <div class="card-grid grid-4">
-        <article class="card reveal" style="--i:0">
-          <span class="card-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4" width="19" height="16" rx="2.5"/><path d="M2.5 9h19"/><circle cx="6" cy="6.5" r=".4" fill="currentColor"/><circle cx="8.6" cy="6.5" r=".4" fill="currentColor"/><path d="M6 13.5l2.5 2.5L6 18.5M11 18h4"/></svg>
-          </span>
-          <h3>Websites</h3>
-          <p>A clean, fast website your organisation can be proud of - and update yourselves. In most cases built on WordPress, so you're never locked in to me or anyone else. From &pound;950.</p>
+      <div class="offering-grid">
+        <article class="offering reveal">
+          <p class="eyebrow">01 / Software products</p>
+          <h3>Useful by design.</h3>
+          <p>Applications that make information easier to understand and everyday tasks easier to manage. Built around the people using them.</p>
+          <a class="text-link" href="/products/">Explore our software <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></a>
         </article>
-        <article class="card reveal" style="--i:1">
-          <span class="card-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="16" rx="2.5"/><path d="M3 9.5h18M8 4.5V2.5M16 4.5V2.5M7.5 13.5h3M13.5 13.5h3M7.5 17h3M13.5 17h3"/></svg>
-          </span>
-          <h3>Tools &amp; widgets</h3>
-          <p>The things a normal web designer can't build: booking rotas, session schedulers, sign-up systems, calculators. From &pound;300.</p>
-        </article>
-        <article class="card reveal" style="--i:2">
-          <span class="card-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21C7 18 3.5 14.5 3.5 9.5A4.5 4.5 0 0 1 12 6a4.5 4.5 0 0 1 8.5 3.5c0 5-3.5 8.5-8.5 11.5Z"/><path d="M7 11.5h3l1.5-3 2 5 1.5-2.5h2"/></svg>
-          </span>
-          <h3>Care &amp; upkeep</h3>
-          <p>Updates, backups, security, and a real person to email when something breaks. Most sites fail through neglect, not bad design. Care plans from &pound;40 a month.</p>
-        </article>
-        <article class="card reveal" style="--i:3">
-          <span class="card-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M15.5 8.5 13.6 13.6 8.5 15.5l1.9-5.1z"/><circle cx="12" cy="12" r=".5" fill="currentColor"/></svg>
-          </span>
-          <h3>Consulting</h3>
-          <p>General consulting on how best small and medium businesses can optimise their processes and benefit from technology. &pound;700/day.</p>
+        <article class="offering reveal" style="--i:1">
+          <p class="eyebrow">02 / IT consulting</p>
+          <h3>Clarity before commitment.</h3>
+          <p>Make sense of your current technology, improve how services run, and decide where to focus next. Practical advice connected to your organisation's needs.</p>
+          <a class="text-link" href="/consulting/">How we can help <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></a>
         </article>
       </div>
     </section>
-
-    <!-- ================= RECENT WORK ================= -->
-    <section id="recent-work" class="section section-alt">
-      <div class="section-head reveal">
-        <p class="eyebrow">Recent work</p>
-        <h2>Built for organisations like <em class="accent-serif">yours</em></h2>
-      </div>
-      <div class="card-grid grid-4 work-strip">
-        <a class="work-card reveal" style="--i:0" href="/work/#save-our-shoreline">
-          <img src="/assets/graphics/work/sos-front.webp" alt="Save our Shoreline website homepage - Saving Slapton Sands, Slapton Ley and Start Bay" width="1231" height="828" loading="lazy">
-          <h3>Save our Shoreline</h3>
-          <p>A full website rebuild for the Slapton coastal charity: news, campaigns, donations, all manageable by the committee.</p>
-          <span class="work-more">See this project</span>
-        </a>
-        <a class="work-card reveal" style="--i:1" href="/work/#market-flows">
-          <img src="/assets/graphics/work/market-flows-front.webp" alt="Market Flows showing a UK equity price chart with moving averages and volume" width="1145" height="791" loading="lazy">
-          <h3>Market Flows</h3>
-          <p>A full web application built from scratch: live financial market data turned into clear, interactive views.</p>
-          <span class="work-more">See this project</span>
-        </a>
-        <a class="work-card reveal" style="--i:2" href="/work/#totnes-kingsbridge">
-          <img src="/assets/graphics/work/parish-front.webp" alt="Totnes and Kingsbridge Catholic Parishes website homepage" width="1240" height="842" loading="lazy">
-          <h3>Totnes &amp; Kingsbridge Catholic parishes</h3>
-          <p>A complete website serving three churches: Mass times, newsletters, donations, and interactive volunteer rotas the coordinators run themselves.</p>
-          <span class="work-more">See this project</span>
-        </a>
-        <a class="work-card reveal" style="--i:3" href="/work/#desktops-for-peace">
-          <img src="/assets/graphics/work/dfp-front.webp" alt="Desktops for Peace website homepage with its peace dove mural" width="1261" height="828" loading="lazy">
-          <h3>Desktops for Peace</h3>
-          <p>A simple, fast website for the volunteer project: what it does, online donations, and one link to share wherever it's mentioned.</p>
-          <span class="work-more">See this project</span>
-        </a>
-      </div>
-    </section>
-
-    <!-- ================= HOW IT WORKS ================= -->
-    <section id="how-it-works" class="section">
-      <div class="section-head reveal">
-        <p class="eyebrow">How it works</p>
-        <h2>Three steps, no <em class="accent-serif">mystery</em></h2>
-      </div>
-      <ol class="steps">
-        <li class="step reveal" style="--i:0">
-          <span class="step-num" aria-hidden="true">1</span>
-          <h3>We talk.</h3>
-          <p>A phone call or a cup of tea. You tell me what your organisation needs and what budget you're working with. I tell you honestly what's possible - and if you don't need me, I'll say so.</p>
-        </li>
-        <li class="step reveal" style="--i:1">
-          <span class="step-num" aria-hidden="true">2</span>
-          <h3>I build.</h3>
-          <p>A website, a rota tool, a piece of honest advice - you see progress as it happens, and nothing goes live without your say-so. Most websites take two to three weeks; tools often less.</p>
-        </li>
-        <li class="step reveal" style="--i:2">
-          <span class="step-num" aria-hidden="true">3</span>
-          <h3>I look after it.</h3>
-          <p>Delivery isn't the end. Updates, backups, tweaks and a real person on the end of an email - so whatever we've built keeps working long after it goes live.</p>
-        </li>
-      </ol>
-    </section>
-
-    <!-- ================= WHY DIGITELOS ================= -->
-    <section id="why" class="section section-alt">
-      <div class="why-grid">
-        <div class="reveal">
-          <p class="eyebrow">Why Digitelos</p>
-          <h2>Done <em class="accent-serif">properly</em>, by someone local</h2>
-          <p>I'm Simon, and I've spent over twenty years managing IT services professionally, in organisations of all shapes and sizes. I bring that same care for doing things properly (security, backups, accessibility, data protection) to small organisations that can't afford an agency and shouldn't have to gamble on one.</p>
-          <p>I live near Start Bay. If you're anywhere in South Devon, we can meet in person.</p>
-          <a class="btn btn-ghost" href="/about/">More about me</a>
+    <section class="section section-alt">
+      <div class="why-grid reveal">
+        <div>
+          <p class="eyebrow">Experience that informs the work</p>
+          <h2>A practical view of the <em class="accent-serif">whole picture.</em></h2>
+          <p>Technology has to fit the people, processes and responsibilities around it. Digitelos brings experience from over twenty years in professional IT service management to consulting and software development.</p>
+          <a class="text-link" href="/about/">About Digitelos <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></a>
         </div>
-        <div class="why-facts reveal" style="--i:1">
-          <ul class="fact-list">
-            <li>20+ years in professional IT service management</li>
-            <li>Experience across organisations of every size</li>
-            <li>Security, backups, accessibility and data protection as standard</li>
-            <li>Based near Start Bay - on hand across South Devon</li>
-          </ul>
-        </div>
+        <ul class="principles">
+          <li><h3>Understand the need</h3><p>Start with the problem and the people it affects.</p></li>
+          <li><h3>Make the choices clear</h3><p>Explain options, costs and trade-offs in plain language.</p></li>
+          <li><h3>Think beyond delivery</h3><p>Consider how technology will be used, supported and maintained.</p></li>
+        </ul>
       </div>
     </section>
-
-    <!-- ================= FINAL CTA ================= -->
-    <section id="contact-cta" class="section">
+    <section class="section selected-note reveal">
+      <div><p class="eyebrow">In practice</p><h2>From information to organisation.</h2><p class="section-lede">Market data, game scheduling and volunteer coordination. Explore some of the practical needs behind our work.</p></div>
+      <a class="text-link" href="/work/">View selected work <svg class="link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></a>
+    </section>
+    <section class="section">
       <div class="contact-panel reveal">
-        <h2>Need some IT advice or help on moving your business forwards? Got a website that needs rescuing, or a rota that needs <em class="accent-serif">taming</em>?</h2>
-        <p class="section-lede">Tell me what's going on. First conversations are free, and honest.</p>
-        <a class="btn btn-primary btn-lg" href="/contact/">Get in touch</a>
-        <p class="contact-note"> South Devon · happy to travel</p>
+        <h2>A clearer way forward.</h2>
+        <p class="section-lede">Tell us what you are working through. We can start with a conversation about what would help.</p>
+        <a class="btn btn-primary" href="/contact/">Get in touch</a>
       </div>
     </section>
   </main>
@@ -551,8 +480,8 @@
         <span class="brand-name">Digitelos</span>
       </a>
       <div class="footer-meta">
-        <p>Digitelos · Devon</p>
-        <p><a href="https://flows.digitelos.co.uk">Market Flows</a> · <a href="https://spirit.digitelos.co.uk">SpiritBible</a></p>
+        <p>Software &amp; IT consulting · Devon</p>
+        <p><a href="/products/">Products</a> · <a href="/consulting/">Consulting</a> · <a href="/work/">Selected work</a></p>
         <p><a href="mailto:info@digitelos.co.uk">info@digitelos.co.uk</a> · <a class="footer-phone" href="tel:+447850106473">+44 (0)7850 106 473</a> · <a href="/privacy/">Privacy</a></p>
         <p>&copy; <span data-year>2026</span> Digitelos</p>
       </div>

@@ -1,61 +1,66 @@
 # Digitelos - project conventions
 
-Digitelos (digitelos.co.uk) is the site for Simon's consulting, web design and
-digital tools business, serving charities, clubs and small organisations in
-Devon and the South West. The original brief lives in
-`docs/copy-deck-2026-07.md`, but it is HISTORICAL BACKGROUND ONLY: Simon edits
-the live copy directly on GitHub, and **the HTML is canonical**. Never
-"restore" deck wording or earlier phrasing over what is in the pages now.
+Digitelos is a software and IT consulting business based in Devon. The live HTML
+is canonical. `docs/copy-deck-2026-07.md` and the original design notes are
+historical context; do not restore their older positioning or wording.
 
-## Audience & positioning
+## Audience and positioning
 
-- Readers are committee members and volunteers, not IT buyers. They want plain
-  numbers and a local person they can phone.
-- Lead with: consulting alongside custom interactive tools (rotas, schedulers,
-  booking widgets), ongoing care, and Simon's 20+ years in professional IT
-  service management. Consulting is a first-class offer, not an afterthought.
-- Do not let the site read as "just a website creator" - Simon also uses it
-  professionally and is tuning the balance. Custom applications (Market-flows,
-  Spirit) and IT advice are part of the story; follow his copy edits, never
-  swing the framing back towards website-building without being asked.
+- Lead with software products and practical IT consulting. Software can serve
+  individuals as well as organisations; do not restrict the company proposition
+  to local charities, clubs or website customers.
+- Working headline: "Thoughtful software. Practical IT expertise."
+- Consulting covers technology reviews, service improvement and software
+  planning. Describe concrete outcomes; agree scope, deliverables and fees.
+- Do not reintroduce website packages, low-cost widgets or care-plan pricing.
+- Products have their own identities. Do not publish an unannounced product's
+  name, details or availability without Simon's instruction.
+- Market Flows and Pickle Rota are current software examples. Community work is
+  secondary. The village hall website has been removed from the portfolio.
+- The founder's twenty-plus years of professional IT service management and
+  ITIL certification provide context on About. Do not invent staffing, clients,
+  accreditations, legal status, product capabilities or security guarantees.
 
-## Tone & copy rules
+## Tone
 
-- Warm, direct, capable. Short sentences. Plain English.
-- Use "you/your" and "I". Do not add claims about Simon's personal
-  circumstances (e.g. "sole practitioner") - keep the framing professional.
-- No AI language in customer-facing copy.
-- No agency jargon: never "transform", "digital journey", "solutions".
-- Typography: short hyphens only - never em dashes, anywhere in rendered copy.
+- Company-led language: "Digitelos", "we", "our", "you" and "your".
+- Serious, friendly and specific. Clear explanations without corporate jargon.
+- Avoid "digital transformation", "solutions" and comparisons with page builders.
+- Do not use AI language in customer-facing copy.
+- Use short hyphens, not em dashes, in rendered copy.
 
-## Design rules
+## Design and implementation
 
-- Keep the Fibonacci spiral logo.
-- Palette: cobalt / azure / vermilion / amber. Cobalt and azure dominate;
-  vermilion sparingly for buttons; amber for highlights only.
-- Check vermilion-on-white contrast for accessibility.
-- Mobile-first: this audience reads on phones.
-- Fast and light: no heavy frameworks; static output preferred.
+- Preserve the Fibonacci spiral logo, hero animation and warm light/dark themes.
+- Cobalt and azure lead; vermilion is reserved for primary actions, amber for
+  small highlights. Maintain accessible contrast in both themes.
+- Mobile-first, lightweight static HTML/CSS/JavaScript. No build is required.
+- Animation replay is silent by default; sound requires explicit opt-in.
+  Respect reduced motion. Content and navigation must work without JavaScript.
+- Use semantic headings, descriptive links, image alt text and visible focus.
+- Contact composes an email locally; it does not submit to a backend. Do not
+  imply delivery. Keep the direct email link and no-JavaScript fallback.
+- Update titles, descriptions, Open Graph tags, canonical URLs and sitemap
+  when changing public pages. The social image is `og-company.png`.
 
-## Technical standards
+## Structure
 
-- Accessibility: semantic headings, alt text on all images, sufficient contrast.
-- Local SEO: unique title/description per page, LocalBusiness schema
-  (addressLocality: Kingsbridge, Devon), location words used naturally in copy.
-- Footer on every page: Digitelos, Devon | email | phone | privacy note.
+Main navigation: Products / Consulting / About / Contact. Logo links home.
+`/work/` is Selected work, linked from the footer and lower homepage.
+`/services/` redirects to `/consulting/` using static HTML for GitHub Pages.
+Footer: company purpose, Devon, selected work, email, phone and privacy.
+The privacy notice covers this company website, not every product.
 
-## Location privacy (important)
+## Location privacy
 
-Simon does not name his home village as the business location. Public copy
-uses "Devon", "South Devon" or "near Start Bay"; the LocalBusiness schema
-uses Kingsbridge. "Slapton" may appear ONLY inside the client project
-descriptions (Save our Shoreline, Slapton Village Hall) where it is a fact
-about the client. Never reintroduce it as Digitelos's own location in
-copy, titles, metas, schema or the footer.
-- Client sites carry a discreet "Created by DigiTelos" footer credit linking
-  to digitelos.co.uk.
+Use Devon or South Devon for the company location. LocalBusiness structured
+information uses Kingsbridge. Do not name Simon's home village as Digitelos's
+location. Slapton may appear only in relevant client project descriptions.
 
-## Site structure
+## Local checks
 
-Five pages: Home, Work, Services & Prices, About, Contact.
-Navigation: Work / Services & Prices / About / Contact. Logo links home.
+From the repository root: `python3 -m http.server 8000`.
+Check `node --check js/main.js`, page and asset responses, the services redirect,
+mobile navigation, both themes, contact composition and animation sound opt-in.
+Do not send email during testing. No application dependency installation is
+required. Browser checks may use an existing Playwright/Chromium installation.

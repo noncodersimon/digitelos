@@ -1,40 +1,52 @@
 # Digitelos
 
-Website for **Digitelos** - websites and digital tools for charities, clubs and
-small organisations in Devon and the South West. Live at https://digitelos.co.uk/
+The Digitelos company website: software products and practical IT consulting.
+Static HTML, CSS and JavaScript, published at https://digitelos.co.uk/.
 
-See `CLAUDE.md` for project conventions and `docs/copy-deck-2026-07.md` for the
-positioning brief and copy deck.
+Read `CLAUDE.md` for current project conventions. Live HTML is canonical; the
+original copy deck and design notes in `docs/` are historical background.
 
 ## Structure
 
-```
-digitelos/
-├── index.html              Home
-├── work/index.html         Work (portfolio)
-├── services/index.html     Services & prices
-├── about/index.html        About Simon
-├── contact/index.html      Contact (mailto form)
-├── privacy/index.html      Privacy note
-├── 404.html                Not-found page
-├── css/main.css            Site styles (design tokens at the top)
-├── js/main.js              Theme toggle, hero animation, nav, form
-├── assets/graphics/        Logo kit, favicons, work previews (SVG)
-├── sitemap.xml, robots.txt Local SEO
-└── docs/                   Brief, copy deck, design notes
-```
+- `index.html`: company overview, software and consulting
+- `products/index.html`: Market Flows and Pickle Rota
+- `consulting/index.html`: technology reviews, service improvement and planning
+- `about/index.html`: company approach and founder background
+- `contact/index.html`: enquiries composed in the visitor's email application
+- `work/index.html`: secondary selected software and community work
+- `privacy/index.html`, `404.html`: website privacy and not-found page
+- `services/index.html`: static redirect for the previous services URL
+- `css/main.css`, `js/main.js`: styles, themes and interactions
+- `assets/graphics/`: existing brand assets, project images and social image
+- `docs/social-card.html`: source for the 1200 × 630 company sharing image
 
-## Local preview
+## Local development
 
-No build step - it's a static site. Serve it (root-absolute paths need a server):
+No install or build step is required. Root-absolute paths need an HTTP server:
 
-```
+```sh
 python3 -m http.server 8000
 ```
 
-then visit http://localhost:8000
+Open the server in a browser. Check JavaScript syntax with:
+
+```sh
+node --check js/main.js
+```
+
+Check the main pages at phone and desktop widths, both themes, mobile navigation,
+contact validation and email composition, and animation replay with and without
+sound enabled. Reduced-motion and no-JavaScript visitors should see usable content.
+The contact form does not send email itself or store enquiries on the website.
+
+The sharing image can be reproduced by serving `docs/social-card.html` in Chromium
+at a viewport of 1200 × 630 and saving a screenshot to
+`assets/graphics/og-company.png`. Wait for images and fonts before capturing.
+Google Fonts requires access to fonts.googleapis.com and fonts.gstatic.com;
+normal system font fallbacks are provided.
 
 ## Deployment
 
-GitHub Pages, deploy from `main`, root folder, custom domain digitelos.co.uk.
-`.nojekyll` skips the Jekyll pass; `CNAME` carries the custom domain.
+GitHub Pages deploys from `main`, root folder. `.nojekyll` skips Jekyll and `CNAME`
+sets the custom domain. Publishing changes to `main` updates the live site.
+The Python development server does not emulate GitHub Pages custom 404 routing.
